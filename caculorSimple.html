@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+    <td colspan="2"><input name="op1" type="number" value="0" id="bt1"></td>
+    <td colspan="2"><input name="op2" type="number" value="0" id="bt2"></td>
+  </tr>
+  <tr>
+    <td><button type="button" onclick="cong()">Addition(+)</button></td>
+    <td><button type="button" onclick="tru()">Subtraction(-)</button></td>
+    <td><button type="button" onclick="nhan()">Multiplication(X)</button></td>
+    <td><button type="button" onclick="chia()">Division(/)</button></td>
+  </tr>
+</table>
+<div id="ketqua"> </div>
+<script>
+  function cong(){
+    let a =+document.getElementById("bt1").value;
+    let b =+document.getElementById("bt2").value;
+     document.getElementById("ketqua").innerText = "Result Addition : " +(a+b);
+  }
+  function tru(){
+    let a =+document.getElementById("bt1").value;
+    let b =+document.getElementById("bt2").value;
+    document.getElementById("ketqua").innerText = "Result Subtraction : " +(a-b);
+  }
+  function nhan(){
+    let a =+document.getElementById("bt1").value;
+    let b =+document.getElementById("bt2").value;
+    document.getElementById("ketqua").innerText = "Result Multiplication :" +(a*b);
+  }
+  function chia(){
+    let a =+document.getElementById("bt1").value;
+    let b =+document.getElementById("bt2").value;
+    document.getElementById("ketqua").innerText = "Result Division: " +(a/b);
+  }
+</script>
+</body>
+</html>
